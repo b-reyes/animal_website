@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page 2</title>
+    <link rel="stylesheet" href="page_style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="main.html">Home</a> <!-- Home button added here -->
+        <a href="page1.html">Page 1</a>
+        <a href="page2.html">Page 2</a>
+        <a href="page3.html">Page 3</a>
+    </div>
+    <div class="content">
+        <h1>This is page 2!</h1>
+        <!-- Gallery container -->
+        <div id="gallery">
+            <!-- Visible thumbnail or image -->
+            <a href="cat_images/cat1.jpeg" data-lightbox="page2-gallery">
+                <img src="cat_images/cat1.jpeg" alt="Gallery image 1">
+            </a>
+            <!-- Hidden links for Lightbox2 gallery -->
+            <a href="cat_images/cat2.jpeg" data-lightbox="page2-gallery" style="display:none;"></a>
+            <a href="cat_images/cat3.jpeg" data-lightbox="page2-gallery" style="display:none;"></a>
+            <a href="cat_images/cat4.jpeg" data-lightbox="page2-gallery" style="display:none;"></a>
+            <a href="cat_images/cat5.jpeg" data-lightbox="page2-gallery" style="display:none;"></a>
+            <!-- Add more hidden links as needed -->
+        </div>
+    </div>
+    <script>
+        lightbox.option({
+          'resizeDuration': 200,
+          'wrapAround': true
+        })
+    </script>
+</body>
+</html>

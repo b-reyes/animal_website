@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page 1</title>
+    <link rel="stylesheet" href="page_style.css">
+    <link rel="stylesheet" href="tic-tac-toe.css">
+    <!-- Add React and ReactDOM from CDN for simplicity -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <!-- Babel is included to allow JSX syntax in the external JS file -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="main.html">Home</a>
+        <a href="page1.html">Page 1</a>
+        <a href="page2.html">Page 2</a>
+        <a href="page3.html">Page 3</a>
+    </div>
+    <div class="content">
+        <h1>This is page 1!</h1>
+        <img src="cute_dog.jpeg" alt="A cute dog" style="animation: flashBorder 1s infinite;">
+        <!-- React root element -->
+        <div id="react-root"></div>
+    </div>
+    <!-- External React script -->
+    <script type="text/babel" src="tic-tac-toe.js"></script>
+</body>
+</html>

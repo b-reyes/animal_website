@@ -1,0 +1,67 @@
+:root {
+    --sidebar-bg-color: #111; /* Variable for sidebar background color */
+    --sidebar-link-color: #fff; /* Variable for sidebar links color */
+    --sidebar-link-hover-color: red; /* Variable for sidebar links hover color */
+    --content-h1-color: blue; /* Variable for h1 color in content */
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+}
+
+.sidebar {
+    height: 100%;
+    width: 200px; /* Adjust the width of the sidebar */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--sidebar-bg-color); /* Using variable for sidebar background color */
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--sidebar-link-color); /* Using variable for sidebar links color */
+    display: block;
+}
+
+.sidebar a:hover {
+    color: var(--sidebar-link-hover-color); /* Using variable for sidebar links hover color */
+}
+
+.content {
+    margin-left: 200px; /* Same as sidebar width */
+    padding: 1px 16px;
+    height: 1000px; /* Adjust content height */
+}
+
+h1 {
+    text-align: center;
+    color: var(--content-h1-color); /* Using variable for h1 color */
+    font-family: Arial, sans-serif;
+}
+:root {
+    --border-width: 8px; /* Variable for border width */
+}
+
+@keyframes flashBorder {
+    0% { border: var(--border-width) dashed red; }
+    14% { border: var(--border-width) dashed orange; }
+    28% { border: var(--border-width) dashed yellow; }
+    42% { border: var(--border-width) dashed green; }
+    57% { border: var(--border-width) dashed blue; }
+    71% { border: var(--border-width) dashed indigo; }
+    85% { border: var(--border-width) dashed violet; }
+    100% { border: var(--border-width) dashed red; }
+}
+
+img {
+    border: var(--border-width) dashed transparent;
+    animation: flashBorder 2s infinite;
+}
