@@ -1,3 +1,15 @@
+.tic-tac-toe-header {
+    justify-content: left; /* Center horizontally */
+    align-items: center; /* Center vertically */ 
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+.tic-tac-toe{
+  margin-left: 50px;
+  margin-bottom: 150px;
+}
+
 .reset {
     background-color: blue;
     color: white;

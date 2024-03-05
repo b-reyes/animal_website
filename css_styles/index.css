@@ -1,0 +1,24 @@
+
+:root {
+    --sidebar-bg-color: #111; /* Variable for sidebar background color */
+    --sidebar-link-color: #fff; /* Variable for sidebar links color */
+    --sidebar-link-hover-color: red; /* Variable for sidebar links hover color */
+    --content-h1-color: blue; /* Variable for h1 color in content */
+}
+
+.content {
+    display: relative;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */ 
+    margin-left: 100px;
+    margin-right: 400px;
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+
+.content h1{
+    text-align: center;
+    color: var(--content-h1-color); /* Using variable for h1 color */
+    font-family: Arial, sans-serif;
+    margin-bottom: 50px;
+}

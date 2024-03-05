@@ -1,0 +1,26 @@
+:root {
+    --sidebar-bg-color: #111; /* Variable for sidebar background color */
+    --sidebar-link-color: #fff; /* Variable for sidebar links color */
+    --sidebar-link-hover-color: red; /* Variable for sidebar links hover color */
+    --content-h1-color: blue; /* Variable for h1 color in content */
+    --border-width: 8px; /* Variable for border width */
+}
+
+.page3-title h1{
+    text-align: center;
+    color: var(--content-h1-color); /* Using variable for h1 color */
+    font-family: Arial, sans-serif;
+}
+
+.page3-title p{
+    font-size: 25px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.cute-video{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */ 
+    margin-top: 50px;
+}

@@ -2,17 +2,26 @@
 <html>
 <head>
     <title>Page 3</title>
-    <link rel="stylesheet" href="page_style.css">
+    <link rel="stylesheet" href="css_styles/page3.css">
+    <link rel="stylesheet" href="header_content/website_header.css">
 </head>
 <body>
-    <div class="sidebar">
-        <a href="index.html">Home</a> <!-- Home button added here -->
-        <a href="page1.html">Page 1</a>
-        <a href="page2.html">Page 2</a>
-        <a href="page3.html">Page 3</a>
-    </div>
-    <div class="content">
+    <!-- Include the JavaScript files -->
+    <script>
+        var menuItems = [
+        { href: "index.html", name: "Home" },
+            { href: "page1.html", name: "Page 1" },
+            { href: "page2.html", name: "Page 2" },
+        ];
+    </script>
+    <script src="header_content/menu_container.js"></script>
+    <script src="header_content/title_container.js"></script>
+
+    <div class="page3-title">
         <h1>This is page 3!</h1>
+    </div>
+
+    <div class="cute-video">
         <!-- Embed YouTube video below -->
         <iframe width="560" 
         height="315" 
